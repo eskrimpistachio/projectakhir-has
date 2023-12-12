@@ -4,10 +4,10 @@ WORKDIR /user/app
 
 COPY package* .
 
-RUN yarn install
+RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3001
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
